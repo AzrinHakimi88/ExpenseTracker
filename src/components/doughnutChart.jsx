@@ -20,7 +20,7 @@ const DoughnutChart = () => {
     }, [expense]); // Run this effect whenever the expense state changes
 
     const fetchExpenseData = () => {
-        axios.get('http://localhost:5555/')
+        axios.get('https://expense-tracker-project-mu.vercel.app/')
             .then((response) => {
                 setExpense(response.data);
             })

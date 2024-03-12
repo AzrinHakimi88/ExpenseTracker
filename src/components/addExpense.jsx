@@ -15,7 +15,7 @@ const AddExpense = () => {
       };
   
       try {
-        await axios.post('http://localhost:5555/', data);
+        await axios.post('https://expense-tracker-project-mu.vercel.app/', data);
         console.log('Expense added successfully');
         // Optionally, you can reset the form here
         event.target.reset();
